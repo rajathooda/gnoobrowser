@@ -12,8 +12,8 @@ from gpt_api import find_top_similar_results
 from auth import authenticate_user, logout_button
 from database import delete_user_button
 
-st.set_page_config(page_title='Quest🔍')
-st.title("Quest🔍")
+st.set_page_config(page_title='RAGPT HOODA🔍')
+st.title("RAGPT HOODA🔍")
 st.markdown('Tired of sifting through search results to find the \
     information you need? The Assistant can take care of it for you! \
         This open source AI-powered personal assistant can access the internet, \
@@ -101,13 +101,4 @@ with response:
         submit_user_message(settings, user_chat_text, chat_submitted)
 
 add_vertical_space(4)
-
-col1, col2, col3 = st.columns(3)
-with col1:
-    buy_me_a_coffee.button('farrael004', floating=False)
-with col2:
-    st.markdown("By [Rafael Moraes](https://github.com/farrael004)")
-    badge(type="github", name="farrael004/Quest")
-with col3:
-    st.container()
 
